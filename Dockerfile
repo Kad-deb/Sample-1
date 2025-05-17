@@ -1,5 +1,5 @@
-FROM ngnix:stable
+FROM nginx:stable
 WORKDIR /usr/share/ngnix/html
 EXPOSE 80
 COPY . .
-CMD ["ngnix", "-g", "daemon off;"]
+CMD ["nginx", "-g", "daemon off;"]
